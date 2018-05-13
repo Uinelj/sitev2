@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    line-height: 1.6;
+    /*font-size: 18px;*/
+    font-size: 1.1rem;
+    color: #444;
+    background: linear-gradient(to bottom, teal 1rem, #EEEEEE 1rem);
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 2rem 10px;
+}
+
+h1,h2,h3 {
+    line-height: 1.2em;
+    padding-left: 2.5rem;
+}
+
+ol, table, p, ul, h1,h2,h3, h4,h5,h6{
+    padding: 0 2.5rem;
+}
+
+table {
+    padding: 0 2.5rem;
+}
+
+th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+a {
+    color: teal
+}
+
+.task-list-item {
+    margin-left: calc(-.25ch); /* to account for the space added in text*/
+}
+
+footer a:first-child {
+    padding-left: 2.5rem;
+}
