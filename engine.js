@@ -53,8 +53,13 @@ async function get_index() {
 //Gets a postlist
 async function get_posts() {
 
+    //debug
     const response_text = await dbg_posts;
-    
+    //prod
+    //let url = config.baseurl + config.siteurl + 'contents/posts';
+    //const response_text = await logFetch(url);
+
+    response_text.reverse();
     document.title = 'Posts';
     var post_list = document.getElementById('post_list');
 

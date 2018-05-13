@@ -1,4 +1,5 @@
 config = {
     'baseurl': 'https://api.github.com/repos/',
-    'siteurl': 'uinelj/sitev2/'
+    'siteurl': 'Uinelj/sitev2/',
+    'debug': true,
 }

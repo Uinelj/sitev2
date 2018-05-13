@@ -4,10 +4,8 @@ body {
     /*font-size: 18px;*/
     font-size: 1.1rem;
     color: #444;
-    /*background: linear-gradient(to bottom, teal 1rem, #EEEEEE 1rem);*/
-    background: #f8f8f8;
+    background: linear-gradient(to bottom, teal 1rem, #EEEEEE 1rem);
     min-height: 100vh;
-    font-family: 'Source Serif Pro', serif;
 }
 
 .wrapper {
@@ -15,11 +13,8 @@ body {
     margin: 0 auto;
     padding: 2rem 10px;
 }
-h1 {
-    border-bottom: 1px dashed;
-}
+
 h1,h2,h3 {
-    font-family: 'Fira Sans', sans-serif;
     line-height: 1.2em;
     padding-left: 2.5rem;
 }
@@ -38,12 +33,9 @@ th, td {
 }
 
 a {
-    color: #2c8093;
+    color: teal
 }
 
-pre {
-    background: #f5f5f5;
-}
 .task-list-item {
     margin-left: calc(-.25ch); /* to account for the space added in text*/
 }
