@@ -13,6 +13,7 @@ testing a new approach
   pages/--
          |--1-title.md
          |--2-title.md
+  index.md
 ```
 
 The numbers are here to order posts and pages. Title will be used to make the links for now, but maybe we'll move on to some yaml info in the posts themselves if it's memory and network efficient (going through raw.github.com)
