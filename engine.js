@@ -68,7 +68,7 @@ async function get_posts() {
 
     for (let post of db) {
 
-        if (post.type == "post" && post.state == "published") {
+        if (/*post.type == "post" && */post.state == "published") {
             //Go from 1-post.md to post
             post_text_str = post.title;
 
