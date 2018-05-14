@@ -64,7 +64,8 @@ async function get_posts() {
     response_text.reverse();
 
     document.title = 'Posts';
-    var post_list = document.getElementById('post_list');
+    var post_content = document.getElementById('post_content');
+    let post_list = document.createElement('ul');
 
     for (let post of db) {
 
@@ -86,6 +87,8 @@ async function get_posts() {
             post_list.appendChild(post_item);
         }
     }
+
+    post_content.appendChild(post_list);
 }
 
 //Get a specific post
