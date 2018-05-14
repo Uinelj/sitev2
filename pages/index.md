@@ -1,8 +1,4 @@
-# Hi!
+# Hi
 
-I'm a french computer science student, studying AI and Robotics.
-I'm interested by machine learning, neural networks, synthesizers and electronic music.
-
-* [Github](https://github.com/Uinelj)
-* [Gitlab](https://gitlab.com/Uinelj)
-* [Soundcloud](https://soundcloud.com/le-uj)
+French computer science student at [UCP](https://www.u-cergy.fr)/[ENSEA](http://www.ensea.fr/), focused on AI, Machine Learning and Robotics.
+Interested by machine learning, neural networks, medtech, synthesizers and electronic music.
