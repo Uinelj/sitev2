@@ -15,14 +15,3 @@ Elixir seems to be a nice language to work on, when dealing with things that hav
  The concept of ownership is really interesting, though.
  
  * [Rust Website](https://rust-lang.org)
- 
-## Go
- Goroutines seems to be the easy way of doing multithreaded programs.
- However, the project architecture seems a bit cumbersome.
- 
- * [Go Website](https://golang.org)
- 
-## Haskell
- Mainly in order to learn what's "true" functionnal programming.
- 
- * [Haskell Website](https://haskell.org)
