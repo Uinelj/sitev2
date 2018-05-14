@@ -66,23 +66,25 @@ async function get_posts() {
     document.title = 'Posts';
     var post_list = document.getElementById('post_list');
 
-    for (let post of response_text) {
+    for (let post of db) {
 
-        //Go from 1-post.md to post
-        post_text_str = post.name.split("-")[1].split(".")[0];
+        if (post.type == "post") {
+            //Go from 1-post.md to post
+            post_text_str = post.title;
 
-        //Forge link for post.html
-        post_link_str = "post.html?p=" + post.name.split(".")[0];
+            //Forge link for post.html
+            post_link_str = post.path;
 
-        //Create html shit
-        let post_item = document.createElement('li'); //let or var?
-        let post_link = document.createElement('a');
-        let post_text = document.createTextNode(post_text_str);
-        post_link.title = post_text_str;
-        post_link.href = post_link_str;
-        post_link.appendChild(post_text);
-        post_item.appendChild(post_link);
-        post_list.appendChild(post_item);
+            //Create html shit
+            let post_item = document.createElement('li'); //let or var?
+            let post_link = document.createElement('a');
+            let post_text = document.createTextNode(post_text_str);
+            post_link.title = post_text_str;
+            post_link.href = post_link_str;
+            post_link.appendChild(post_text);
+            post_item.appendChild(post_link);
+            post_list.appendChild(post_item);
+        }
     }
 }
 
@@ -99,6 +101,14 @@ async function get_post() {
     console.log(url);
     const response = await logFetchStr(url);
     convert(response);
+}
+
+function parse_db() {
+
+    for (let item of db) {
+        console.log(item);
+
+    }
 }
 
 //md->html
