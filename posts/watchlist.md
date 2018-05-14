@@ -7,8 +7,8 @@
 
 ## Shows
 
-- [ ] Platane
-- [ ] Brooklyn 99
+- [x] Platane
+- [x] Brooklyn 99
 - [ ] Dirk Gently
 - [ ] Mindhunter
 - [ ] Happy!
@@ -52,5 +52,5 @@
 - [ ] [Ninja Turtles](https://www.senscritique.com/film/Ninja_Turtles/476969)
 - [ ] Playtime
 - [ ] [Synecdoche New York](https://www.senscritique.com/film/Synecdoche_New_York/490268)
-- [ ] [City Of God]()
-- [ ] [We need to talk about Kevin]()
+- [ ] City Of God
+- [ ] We need to talk about Kevin
