@@ -68,12 +68,12 @@ async function get_posts() {
 
     for (let post of db) {
 
-        if (post.type == "post") {
+        if (post.type == "post" && post.state == "published") {
             //Go from 1-post.md to post
             post_text_str = post.title;
 
             //Forge link for post.html
-            post_link_str = post.path;
+            post_link_str = "post.html?p=" + post.path;
 
             //Create html shit
             let post_item = document.createElement('li'); //let or var?
@@ -94,21 +94,13 @@ async function get_post() {
     //Get from the ?p=something in the url
     var params = window.location.search;
     params = params.replace('?', '').replace('=', '').replace('p', '');
-
+    console.log(params);
     let url = 'https://raw.githubusercontent.com/'
                 + config.siteurl
-                + 'master/posts/' + params + '.md';
+                + 'master/' + params;
     console.log(url);
     const response = await logFetchStr(url);
     convert(response);
-}
-
-function parse_db() {
-
-    for (let item of db) {
-        console.log(item);
-
-    }
 }
 
 //md->html

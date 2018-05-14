@@ -2,16 +2,8 @@ let db = [
     {
         "title": "Sample title",
         "type": "post",
+        "state": "published",
         "path": "posts/5-watchlist.md",
+        "date": new Date('May 14, 2018')
     },
-    {
-        "title": "Sample title 2",
-        "type": "post",
-        "path": "posts/6-languages.md",
-    },
-    {
-        "title": "Sample title 2",
-        "type": "page",
-        "path": "posts/6-languages.md",
-    }
 ]
