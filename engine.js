@@ -1,4 +1,4 @@
-//TODO: requests counter. Be sure not to trigger gh limit
+//TODO: requests counter. Make sure not to trigger gh limit
 
 //From https://developers.google.com/web/fundamentals/primers/async-functions
 // Get a json object from url
@@ -24,10 +24,8 @@ async function logFetchStr(url) {
       console.log('fetch failed', err);
     }
 }
-function print_content(fetched_page) {
-    console.log(atob(fetched_page.content));
-}
 
+//Gets the readme page of the repo and includes it in the site html
 async function get_readme() {
     //debug
     //const response_text = await dbg_readme;
@@ -41,6 +39,7 @@ async function get_readme() {
     convert(response_md);
 }
 
+//Gets the pages/index.md of the page and includes it in the site html
 async function get_index() {
     let url = 'https://raw.githubusercontent.com/'
                 + config.siteurl
@@ -50,7 +49,8 @@ async function get_index() {
     convert(response);
 }
 
-//Gets a postlist
+
+//Gets the postlist by querying the github API
 async function get_posts() {
 
     //debug
@@ -59,7 +59,10 @@ async function get_posts() {
     let url = config.baseurl + config.siteurl + 'contents/posts';
     const response_text = await logFetch(url);
 
+    //Reverse the postlist to have the most recent post first
+    //Not sure if it will work consistently
     response_text.reverse();
+
     document.title = 'Posts';
     var post_list = document.getElementById('post_list');
 
@@ -83,8 +86,10 @@ async function get_posts() {
     }
 }
 
-
+//Get a specific post
 async function get_post() {
+
+    //Get from the ?p=something in the url
     var params = window.location.search;
     params = params.replace('?', '').replace('=', '').replace('p', '');
 
@@ -96,6 +101,7 @@ async function get_post() {
     convert(response);
 }
 
+//md->html
 function convert(text) {
     var converter = new showdown.Converter();
     converter.setOption('tasklists', true);
