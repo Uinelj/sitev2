@@ -1,5 +1,7 @@
 # Entorhinal Cortex and Visual Grid Cells
 
+*Note: Couldn't finish this project, may delete this anytime soon.*
+
 Notes about university research project.
 
 ## Articles to read
