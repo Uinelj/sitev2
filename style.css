@@ -48,6 +48,23 @@ pre {
     margin-left: calc(-.25ch); /* to account for the space added in text*/
 }
 
-footer a:first-child {
+/*footer a:first-child {
     padding-left: 2.5rem;
+}*/
+footer a {
+    text-decoration: none;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    text-decoration: none;
 }
