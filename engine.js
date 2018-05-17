@@ -98,9 +98,7 @@ async function get_post() {
     var params = window.location.search;
     params = params.replace('?', '').replace('=', '').replace('p', '');
     console.log(params);
-    let url = 'https://raw.githubusercontent.com/'
-                + config.siteurl
-                + 'master/' + params;
+    let url = config.siteroot + params;
     console.log(url);
     const response = await logFetchStr(url);
     convert(response);
